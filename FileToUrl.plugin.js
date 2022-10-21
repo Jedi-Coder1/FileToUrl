@@ -28,8 +28,16 @@
 @else @*/
 
 module.exports = class FileToUrl {
-    stop(){}
+    stop(){
+        this.ToggleButton.remove();
+    }
     start() {
-      const AttchUrl = `https://cdn.discordapp.com/attachments/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedGuildId"))}/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedChannelId"))}/`
+    const AttchUrl = `https://cdn.discordapp.com/attachments/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedGuildId"))}/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedChannelId"))}/`
+    const ToggleButton = this.ToggleButton = document.createElement("button");
+    ToggleButton.textContent = "Start Typing";
+    ToggleButton.addEventListener("click", () => {
+        window.alert("Hello World!");});
+    const root = document.querySelector("");
+    root.append(ToggleButton);
     }
 };
