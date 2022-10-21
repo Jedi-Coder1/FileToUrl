@@ -3,8 +3,8 @@
  * @version 1
  * @description Link emojis if you don't have nitro! Type them out or use the emoji picker!
  * @author JediMinecraft1
- * @source 
- * @updateUrl 
+ * @source https://github.com/Jedi-Coder1/FileToUrl/blob/main/FileToUrl.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Jedi-Coder1/FileToUrl/main/FileToUrl.plugin.js
  */
 
 /*@cc_on
