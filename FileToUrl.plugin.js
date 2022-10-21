@@ -30,6 +30,6 @@
 module.exports = class FileToUrl {
     stop(){}
     start() {
-      
+      const AttchUrl = `https://cdn.discordapp.com/attachments/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedGuildId"))}/${BdApi.Webpack.getModule(BdApi.Webpack.Filters.byProps("getLastSelectedChannelId"))}/`
     }
 };
